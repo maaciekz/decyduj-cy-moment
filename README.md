@@ -220,4 +220,27 @@ Po trzecie, ranking i kadrowanie mają wyraźny potencjał zastosowań badawczyc
 
 ---
 
+## Materiały pomocnicze: zrozumieć pojęcia od podstaw
+
+Poniższe źródła pozwalają zrozumieć trzy filary projektu bez wcześniejszego przygotowania technicznego. Ułożone od najbardziej intuicyjnych po bardziej szczegółowe.
+
+**Embeddingi (zamiana zdjęcia lub tekstu na wektor liczb):**
+- [What Are Vector Embeddings? An Intuitive Explanation (DataCamp)](https://www.datacamp.com/blog/vector-embedding), najprostsze wprowadzenie, z obrazem przestrzeni, w której podobne pojęcia leżą blisko siebie.
+- [Vector Embeddings Explained: A Beginner's Guide (The New Stack)](https://thenewstack.io/vector-embeddings-explained-a-beginners-guide-to-powerful-ai/), z przykładami dla obrazów (wyszukiwanie wizualne, rozpoznawanie).
+- [Understanding, Generating, and Visualizing Embeddings (Dataquest)](https://www.dataquest.io/blog/understanding-generating-and-visualizing-embeddings/), pokazuje, jak sprowadzić wielowymiarową przestrzeń do dwóch wymiarów, żeby ją zobaczyć.
+
+**CLIP (model zamieniający obrazy i teksty na wektory w jednej przestrzeni):**
+- [CLIP: Connecting text and images (blog OpenAI)](https://openai.com/index/clip/), źródło oryginalne, wyjaśnia ideę dopasowywania obrazów do opisów.
+- [Understanding OpenAI's CLIP model (Medium, Szymon Palucha)](https://medium.com/@paluchasz/understanding-openais-clip-model-6b52bade3fa3), przystępny opis krok po kroku, po co dwie wieże (obrazowa i tekstowa).
+- [OpenAI CLIP Model Explained: An Engineer's Guide (Lightly)](https://www.lightly.ai/blog/clip-openai), jak działa uczenie kontrastowe i klasyfikacja bez dodatkowego treningu.
+
+**Wielkość efektu / d' (miara, jak bardzo dwie grupy są od siebie oddzielone):**
+- [Cohen's d: Definition, Using & Examples (Statistics By Jim)](https://statisticsbyjim.com/basics/cohens-d/), prostym językiem, czym różni się wielkość efektu od istotności statystycznej.
+- [Interpreting Cohen's d Effect Size (interaktywna wizualizacja, R Psychologist)](https://rpsychologist.com/cohend/), suwak pokazuje na żywo, jak rozkłady się rozjeżdżają przy rosnącym d, oraz jak d przekłada się na „szansę, że losowy element jednej grupy przewyższy losowy element drugiej".
+- [How to Interpret Cohen's d With Examples (Statology)](https://www.statology.org/interpret-cohens-d/), progi 0.2 / 0.5 / 0.8 z konkretnymi przykładami.
+
+Uwaga terminologiczna: w projekcie miara separacji nazywana jest d' (d-prime, z teorii detekcji sygnału), a w podanych źródłach Cohen's d. Obie to matematycznie ta sama konstrukcja, różnica dotyczy tylko tradycji nazewniczej różnych dziedzin.
+
+---
+
 
