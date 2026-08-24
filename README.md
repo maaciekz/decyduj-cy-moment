@@ -1,6 +1,6 @@
 # Czy sztuczna inteligencja rozumie „decydujący moment" w fotografii?
 
-> Próba matematycznego uchwycenia pojęcia, którego przez sto lat nie udało się zamknąć w słowach.
+> Próba matematycznego uchwycenia pojęcia, które trudno opisac slowami.
 
 ---
 
@@ -89,13 +89,17 @@ Z publicznego API Biblioteki Kongresu pobrano 152 404 rekordy metadanych. Przez 
 Dodatkowo pary zostały podzielone według tego, jak bardzo klatki w nich się różnią: od „mikroruchu" (klatki niemal identyczne) po „wyraźne" (realnie inne ujęcie tej samej sceny). Ten podział okazał się później kluczowym narzędziem weryfikacji.
 
 Roznice miedzy zdjeciami 0.95
+
 <img width="817" height="1118" alt="image" src="https://github.com/user-attachments/assets/0bfc21b2-d6ee-4496-a579-b64c7462b8be" />
 
+
 Roznice miedzy zdjeciami 0.8
+
 <img width="757" height="1161" alt="image" src="https://github.com/user-attachments/assets/efe7614e-76c3-4bdf-b107-7a95c32c54d0" />
 
 
 Roznice miedzy zdjeciami 0.6
+
 <img width="768" height="1152" alt="image" src="https://github.com/user-attachments/assets/3e952ea8-0843-498b-ad0d-1c2cc6e64abf" />
 
 ---
@@ -107,6 +111,17 @@ Każde zdjęcie zostało zamienione na embedding za pomocą CLIP. Następnie pad
 Odpowiedź brzmi: tak. Surowy wynik był jednak podejrzanie dobry.
 
 Okazało się, że część „sygnału" pochodziła z fizycznej dziurki wybitej w odrzuconych negatywach. Model, zgodnie z przewidywaniami, znalazł najłatwiejszą cechę: nauczył się rozpoznawać otwór, a nie jakość zdjęcia. Pomiar to potwierdził wprost. Sama dziurka dawała siłę sygnału d'=0.204, podczas gdy całość surowego sygnału wynosiła d'=0.240. Innymi słowy, bez oczyszczenia powstałby detektor perforacji zamiast modelu oka Strykera.
+
+Wybrane:
+
+<img width="512" height="379" alt="2017714451__chosen" src="https://github.com/user-attachments/assets/0bbdee9f-310b-4187-b978-012d795c6e90" />
+
+
+
+Odrzucone (dziurki):
+
+<img width="512" height="382" alt="2017714454__rejected" src="https://github.com/user-attachments/assets/1c038fe0-e8bf-4b29-a3bf-f26cc31e684c" />
+
 
 Artefakty techniczne (dziurka, ostrość, jasność, kontrast) zostały usunięte metodą matematyczną, z pomiarem każdego z nich przed usunięciem, aby wiadomo było, co dokładnie znika. Po oczyszczeniu został prawdziwy sygnał:
 
@@ -152,6 +167,9 @@ Jeśli oś rozpoznaje „ludzką historię w kadrze", może wskazać, gdzie w zd
 
 Ważne zastrzeżenie: kadrowanie nie tworzy treści. Na pustym pejzażu nie wygeneruje ludzi i poprawnie sygnalizuje brak możliwości poprawy. Aby uniknąć trywialnego rozwiązania (maksymalne przybliżenie na dowolną twarz), narzędzie ma wbudowane ograniczenia: dolny limit rozmiaru kadru i kara za skrajne proporcje. Dzięki temu wybiera kompozycję z ludźmi, a nie samo zbliżenie.
 
+<img width="800" height="4496" alt="stryker_crop_results" src="https://github.com/user-attachments/assets/3b19fc32-0ce7-48d5-972a-030d639910c2" />
+
+
 ### Przełamanie granicy: krytyk uczony
 
 Oś liniowa zatrzymała się na d'=0.188. Powstało pytanie, czy jest to granica metody (prostej linii), czy granica informacji (tyle, ile w danych w ogóle się znajduje).
@@ -163,6 +181,12 @@ Oznacza to, że 0.188 było granicą metody, nie informacji. W reprezentacji CLI
 ### Ranking do selekcji
 
 Wytrenowany krytyk przypisuje każdemu zdjęciu jedną liczbę, opisującą „ile w nim oka Strykera". Powstaje z tego praktyczne narzędzie. Po wgraniu kilkuset zdjęć z sesji zwraca je posortowane od najbardziej do najmniej „Strykerowskich", z podglądem miniatur. Nie zastępuje ludzkiego wyboru, lecz daje drugie spojrzenie, wyćwiczone na dziesiątkach tysięcy redakcyjnych decyzji sprzed dziewięćdziesięciu lat.
+
+<img width="1670" height="1239" alt="image" src="https://github.com/user-attachments/assets/4edcfc3f-da5f-4c97-9678-b07a1d1cf9c1" />
+
+
+<img width="1670" height="1169" alt="image" src="https://github.com/user-attachments/assets/fe3170ad-2226-4f43-911a-f456c897d1b8" />
+
 
 ---
 
