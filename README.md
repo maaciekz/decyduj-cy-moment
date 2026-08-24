@@ -139,6 +139,10 @@ Zwycięskie skojarzenie było jednoznaczne: „intymna ludzka więź" (*an intim
 
 Skrajności osi dopełniają obraz. Na jednym biegunie znajdują się ludzie, blisko, w interakcji: praca zespołowa, rozmowy, twarze. Na drugim puste krajobrazy, niebo, sceny bez człowieka. W parach z tej samej sceny wybór Strykera niemal zawsze padał na wersję bliższą ludziom, zgodnie ze słynną zasadą Roberta Capy: „Jeśli twoje zdjęcia nie są dość dobre, to znaczy, że nie podszedłeś dość blisko".
 
+<img width="1194" height="355" alt="image" src="https://github.com/user-attachments/assets/b57be33f-8951-4acd-86fc-06639ecb1bdc" />
+
+
+
 Znaleziona oś nie koduje „momentu czasowego". Koduje ludzką historię w kadrze: obecność, bliskość, interakcję, przeciwstawione pustce i przypadkowi.
 
 Pojęcie czasu, ten Cartier-Bressonowski „ułamek sekundy", okazało się w danych nieobecne (najsłabsze ze wszystkich testowanych kategorii). Jest to wynik uczciwy i przewidziany. Pojedyncza klatka nie niesie informacji o momencie w czasie. Do uchwycenia „ułamka sekundy" potrzeba sekwencji, a FSA to pojedyncze zdjęcia. Uchwycone zostało znaczenie, nie czas, czyli dwie z trzech współrzędnych definicji Cartier-Bressona.
@@ -167,6 +171,9 @@ Jeśli oś rozpoznaje „ludzką historię w kadrze", może wskazać, gdzie w zd
 
 Ważne zastrzeżenie: kadrowanie nie tworzy treści. Na pustym pejzażu nie wygeneruje ludzi i poprawnie sygnalizuje brak możliwości poprawy. Aby uniknąć trywialnego rozwiązania (maksymalne przybliżenie na dowolną twarz), narzędzie ma wbudowane ograniczenia: dolny limit rozmiaru kadru i kara za skrajne proporcje. Dzięki temu wybiera kompozycję z ludźmi, a nie samo zbliżenie.
 
+
+Tutaj kadrowanie zdjęć zrobionych przeze mnie pod oko Styrkera:
+
 <img width="800" height="4496" alt="stryker_crop_results" src="https://github.com/user-attachments/assets/3b19fc32-0ce7-48d5-972a-030d639910c2" />
 
 
@@ -182,8 +189,14 @@ Oznacza to, że 0.188 było granicą metody, nie informacji. W reprezentacji CLI
 
 Wytrenowany krytyk przypisuje każdemu zdjęciu jedną liczbę, opisującą „ile w nim oka Strykera". Powstaje z tego praktyczne narzędzie. Po wgraniu kilkuset zdjęć z sesji zwraca je posortowane od najbardziej do najmniej „Strykerowskich", z podglądem miniatur. Nie zastępuje ludzkiego wyboru, lecz daje drugie spojrzenie, wyćwiczone na dziesiątkach tysięcy redakcyjnych decyzji sprzed dziewięćdziesięciu lat.
 
+Tutaj przyklad na moich zdjeciach wykonanych Ricoh GR III:
+
+Najlepsze wg "oka Strykerowskiego":
+
 <img width="1670" height="1239" alt="image" src="https://github.com/user-attachments/assets/4edcfc3f-da5f-4c97-9678-b07a1d1cf9c1" />
 
+
+Najgorsze:
 
 <img width="1670" height="1169" alt="image" src="https://github.com/user-attachments/assets/fe3170ad-2226-4f43-911a-f456c897d1b8" />
 
