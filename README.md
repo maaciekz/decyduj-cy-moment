@@ -144,7 +144,7 @@ Zwycięskie skojarzenie było jednoznaczne: „intymna ludzka więź" (*an intim
 
 Skrajności osi dopełniają obraz. Na jednym biegunie znajdują się ludzie, blisko, w interakcji: praca zespołowa, rozmowy, twarze. Na drugim puste krajobrazy, niebo, sceny bez człowieka. W parach z tej samej sceny wybór Strykera niemal zawsze padał na wersję bliższą ludziom, zgodnie ze słynną zasadą Roberta Capy: „Jeśli twoje zdjęcia nie są dość dobre, to znaczy, że nie podszedłeś dość blisko".
 
-<img width="1194" height="355" alt="image" src="https://github.com/user-attachments/assets/b57be33f-8951-4acd-86fc-06639ecb1bdc" />
+<img width="1194" height="710" alt="image" src="https://github.com/user-attachments/assets/b57be33f-8951-4acd-86fc-06639ecb1bdc" />
 
 
 
