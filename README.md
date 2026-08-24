@@ -127,6 +127,8 @@ Artefakty techniczne (dziurka, ostrość, jasność, kontrast) zostały usunięt
 
 **d'=0.188**, słaby, ale solidny, blisko ośmiokrotnie silniejszy niż przypadkowy szum.
 
+
+
 Najmocniejszy dowód, że jest to sygnał treściowy, a nie kolejny artefakt, płynie z podziału par. Im bardziej klatki w parze się różniły, tym wyraźniejszy był sygnał. Dla par niemal identycznych oś praktycznie milczała (d' około 0.04), dla par wyraźnie różnych mówiła głośno (d' około 0.28). Gdyby był to artefakt techniczny, byłby wszędzie taki sam. To, że sygnał rośnie razem z realnością wyboru redaktorskiego, jest sygnaturą prawdziwej treści.
 
 ---
@@ -134,6 +136,9 @@ Najmocniejszy dowód, że jest to sygnał treściowy, a nie kolejny artefakt, p�
 ## Czym jest ta oś
 
 Znalezienie kierunku to jedno, zrozumienie, co koduje, to drugie. Tekstowa część modelu CLIP pozwala „zapytać" oś, z jakimi pojęciami się pokrywa (CLIP koduje teksty i obrazy w tej samej przestrzeni, więc można mierzyć ich bliskość).
+
+<img width="967" height="347" alt="image" src="https://github.com/user-attachments/assets/e0a7f2e4-34af-4959-a4c9-5f621494623e" />
+
 
 Zwycięskie skojarzenie było jednoznaczne: „intymna ludzka więź" (*an intimate human connection*), najsilniejsze w całym badaniu. Zaraz za nim „przekonująca ludzka historia".
 
@@ -205,35 +210,14 @@ Najgorsze:
 
 ## Wnioski
 
-Najważniejszy wynik nie jest liczbą. Jest nim to, że udało się empirycznie dotknąć estetycznej definicji sprzed siedemdziesięciu lat.
+Badanie prowadzi do trzech wniosków, które wykraczają poza samo pytanie o decydujący moment.
 
-Cartier-Bresson mówił o jednoczesnym rozpoznaniu znaczenia i formy. Badanie pokazało, że w reprezentacji maszynowej te dwie rzeczy nie są osobne. Oś nie koduje formy obok znaczenia, lecz obniża ocenę formy pozbawionej znaczenia: harmonijne, ale puste pejzaże lądują po stronie odrzuconych. Jest to dokładnie Cartier-Bressonowskie „małżeństwo formy i znaczenia", wykryte liczbowo. „Ułamek sekundy" pozostał poza zasięgiem, co również jest uczciwą częścią mapy tego, co da się zmierzyć.
+Po pierwsze, embeddingi okazują się użytecznym narzędziem do odnajdywania w danych ukrytych przestrzeni znaczeniowych. Skoro udało się wskazać kierunek odpowiadający „ludzkiej historii w kadrze", to samą metodą (parowanie przykładów, neutralizacja zakłóceń, pomiar separacji) można szukać reprezentacji dowolnej innej cechy, także abstrakcyjnej. Otwiera to drogę do badania, jakie jeszcze pojęcia są już zakodowane w gotowych modelach, bez żadnego dodatkowego treningu.
 
-Projekt zebrał po drodze kilka lekcji wykraczających poza fotografię:
+Po drugie, warto przyjrzeć się modelom dyfuzyjnym (generatorom obrazów) od tej samej strony. Pierwsza próba pokazała, że odtwarzają one powierzchnię, ale gubią pojęcia abstrakcyjne. Pozostaje otwarte pytanie badawcze, czy modele generatywne są w ogóle zdolne wpleść takie pojęcia w swoje działanie, a jeśli tak, to w jaki sposób można je do tego skłonić. Znaleziona oś daje konkretne narzędzie do sprawdzenia tego, można nią mierzyć, czy wygenerowany obraz faktycznie zbliża się ku „ludzkiej historii", czy tylko ku jej powierzchni.
 
-- Model zawsze wybiera najłatwiejszą drogę. Dziurka w negatywie niosła silniejszy sygnał niż cała reszta. Bez świadomego jej usunięcia powstałby wynik fałszywy. Zasada brzmi: najpierw zmierz, potem wierz.
-- „Czyste" pojęcia techniczne prawie nie istnieją. Ostrość okazała się spleciona z treścią (teksturowe pola kontra gładkie niebo). W prawdziwych danych jakość i treść są nierozłączne.
-- Wynik negatywny bywa cenny. Nieobecność „momentu czasowego" nie jest brakiem badania, lecz precyzyjną granicą tego, co pojedyncza klatka może przekazać.
+Po trzecie, ranking i kadrowanie mają wyraźny potencjał zastosowań badawczych i biznesowych. Automatyczne porządkowanie zdjęć wg wyuczonego kryterium pozwala wybrać kilka najlepszych ujęć z kilkuset zrobionych, co jest codziennym i czasochłonnym zadaniem fotografa. Ta sama zdolność skaluje się do dużych zbiorów, przeszukiwania archiwów pod kątem najciekawszych kadrów, grupowania zdjęć według wspólnej cechy czy wstępnej selekcji materiału. Kluczowe jest to, że kryterium nie musi być odgórnie zdefiniowane, można je wydobyć z samych przykładów wyborów, co czyni metodę elastyczną i możliwą do dostosowania pod konkretne oko lub potrzebę.
 
 ---
 
-## Dla zainteresowanych szczegółami
 
-Projekt jest udokumentowany warstwowo, od intuicji po matematykę:
-
-- **Metodologia i matematyka**: jak mierzy się separację (d'), jak neutralizuje się konfoundy (projekcja ortogonalna), jak czyta się wyniki.
-- **Wyniki pełne**: wszystkie etapy badania, liczby, tabele, audyt tezy Cartier-Bressona rozłożony na pięć komponentów.
-- **Narzędzia**: notebooki do kadrowania, treningu krytyka i rankingu własnych zdjęć, z dokumentacją kodu.
-- **Źródła**: prace naukowe i materiały dydaktyczne stojące za każdym użytym pojęciem.
-
----
-
-## Jak rozumieć ten projekt
-
-Nie jest to dowód na to, że „AI rozumie sztukę". Jest to teza skromniejsza i zarazem ciekawsza: pojęcie uważane za czysto intuicyjne zostawia mierzalny ślad w sposobie, w jaki maszyna reprezentuje obrazy. Przy odpowiedniej dyscyplinie (parowanie zdjęć, neutralizacja konfoundów, uczciwe testy transferu) ten ślad da się wydobyć, nazwać i odróżnić od powierzchownych artefaktów.
-
-Decydujący moment okazał się nie „ułamkiem sekundy", lecz ludzką historią w kadrze, przynajmniej w oczach jednego redaktora, którego wybory z lat trzydziestych wciąż da się odczytać z liczbowego cienia, jaki rzucają jego zdjęcia.
-
----
-
-*Projekt badawczy na styku uczenia maszynowego, wizji komputerowej i teorii fotografii. Zbudowany wyłącznie na danych z domeny publicznej.*
